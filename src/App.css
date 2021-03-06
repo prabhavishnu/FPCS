@@ -1,38 +1,104 @@
-.App {
+.App_Row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  border-bottom: 4px dashed darkgray;  
+  align-items: center;
+  position: relative;
+}
+
+  
+.App_heading{
+  font-size: 40px;
+  color: #FC1554;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App_heading strong{
+  font-weight: 900;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App_tiles{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 30px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.App_Sidetag{
+  width: 70px;
+  height: 600px; 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #FC1554;
+ margin: 20px 0;
+
+}
+.App_Row h2{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
   color: white;
+  padding: 0;
+  margin:0;
+  text-transform: uppercase;
+  font-weight: 300;
+  
+}
+.App_Special_elements_textbox{
+  width: 400px;
+  font-size: 25px;
+}
+.App_Special_elements_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top:10vh ;
+  border-bottom: 4px dashed darkgray;
+  
+}
+.App_Special_elements img{
+    width: 100%;
+    height: 300px;
+}
+.App_Special_elements{
+  margin-left: 30px;
+  width: 400px;
+  margin-bottom: 40px;
+}
+.App_Special_elements_row2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top:10vh ;
+  margin-left: 50px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.App_Special_elements_textbox strong{
+  color: #FC1554;
+  font-size: 30px;
+}
+.right_arrow{
+  transform: rotate(-180deg);
+  width: 80px;
+  height: 40px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left_arrow{
+  width: 80px;
+  height: 40px
+}
+
+.down_arrow_1{
+  position: absolute;
+  right: 150px;
+  height: 200px;
+  top:700px
+}
+
+.down_arrow_2{
+  position: absolute;
+  left: 250px;
+  height: 200px;
+  top:1350px
 }
